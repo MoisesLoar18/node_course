@@ -3,11 +3,12 @@ const axios = require('axios');
 const httpClientPlugin = {
   get: async (url) => {
     const response = await axios.get(url);
-    console.log(response.data)
     return response.data;
   },
 };
 
+// Agregando un comentario para probar el git
+// Agregando un comentario para probar el git
 module.exports = {
   http: httpClientPlugin,
 };
