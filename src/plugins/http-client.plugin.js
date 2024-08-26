@@ -8,6 +8,7 @@ const httpClientPlugin = {
 };
 
 // Agregando un comentario para probar el git
+// Agregando un comentario para probar el git
 module.exports = {
   http: httpClientPlugin,
 };
