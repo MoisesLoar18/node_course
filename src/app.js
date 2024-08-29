@@ -4,12 +4,17 @@
 // const { getUserById } = require("./js-foundations/04-arrow-functions.js");
 // const { getAge, getUUID } = require("./plugins"); //Esto sigue el patrón adaptador
 // const { makeBuildPerson } = require("./js-foundations/05-factory.js"); //Esto sigue el patrón factory
+// const { getPokemonById } = require("./js-foundations/06-promises.js");
 
-const { getPokemonById } = require("./js-foundations/06-promises.js");
+const { buildLogger } = require('./plugins')
 
-getPokemonById(4)
-    .then((pokemon) => console.log(pokemon))
-    .finally(() => console.log("Pokemon fetched"));
+const logger = buildLogger('app.js')
+
+logger.log('Hola mundo')
+logger.err('Esto es algo malo')
+// getPokemonById(4)
+//     .then((pokemon) => console.log(pokemon))
+//     .finally(() => console.log("Pokemon fetched"));
 
 // console.log(emailTemlate);
 // console.log("hola mundo desde app.js")
